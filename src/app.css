@@ -1,0 +1,21 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --color-primary: #f26558;
+  --color-primary-hover: #f36d60;
+  --color-bg: #3f3936;
+  --color-bg-light: #4b4440;
+  --color-bg-dark: #2f2b29;
+  --color-bg-dark-hover: #393634;
+  --color-white: #eee;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
