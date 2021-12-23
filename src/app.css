@@ -7,7 +7,8 @@
 :root {
   /* Colors */
   --color-primary: #f26558;
-  --color-primary-hover: #f36d60;
+  --color-primary-hover: #f37469;
+  --color-primary-lighter: #f6938a;
   --color-bg: #3f3936;
   --color-bg-light: #4b4440;
   --color-bg-dark: #2f2b29;

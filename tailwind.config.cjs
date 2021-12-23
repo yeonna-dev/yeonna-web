@@ -1,4 +1,5 @@
-const config = {
+
+module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{html,js,svelte,ts}"],
 
@@ -8,6 +9,7 @@ const config = {
         primary: {
           DEFAULT: 'var(--color-primary)',
           hover: 'var(--color-primary-hover)',
+          light: 'var(--color-primary-light)',
         },
         bg: {
           DEFAULT: 'var(--color-bg)',
@@ -18,9 +20,13 @@ const config = {
         white: 'var(--color-white)',
       },
     },
+    ringColor: {
+      DEFAULT: '#f6938a',
+      primary: 'var(--color-primary)'
+    },
   },
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
-
-module.exports = config;

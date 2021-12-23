@@ -1,6 +1,8 @@
 <script>
   import { onMount } from 'svelte';
 
+  import classNames from 'classnames';
+
   import Loader from './Loader.svelte';
 
   import { isURL } from '$lib/helpers';
@@ -24,9 +26,13 @@
 {#if loading}
   <Loader />
 {:else if type === MediaTypes.IMAGE}
-  <img class={`bit ${imageClass}`} src={content} alt="media content" />
+  <img
+    class={classNames('bit', imageClass)}
+    src={content}
+    alt="media content"
+  />
 {:else}
-  <div class={`bit overflow-hidden overflow-ellipsis ${textClass}`}>
+  <div class={classNames('bit overflow-hidden overflow-ellipsis', textClass)}>
     {content}
   </div>
 {/if}

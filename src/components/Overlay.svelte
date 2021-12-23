@@ -1,13 +1,13 @@
 <script>
-  import { onMount } from 'svelte';
+  import classNames from 'classnames';
 
   export let shown;
   export let contentClass = '';
   export let withCloseButton = false;
 
-  onMount(() => console.log('hi'));
-
-  const hide = () => (shown = false);
+  export const show = () => (shown = true);
+  export const hide = () => (shown = false);
+  export const toggle = () => (shown = !shown);
 </script>
 
 {#if shown}
@@ -51,7 +51,7 @@
           From: "opacity-100 translate-y-0 sm:scale-100"
           To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       -->
-      <div class={`transform ${contentClass}`}>
+      <div class={classNames('transform', contentClass)}>
         <slot />
       </div>
     </div>

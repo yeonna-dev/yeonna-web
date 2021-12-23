@@ -3,8 +3,10 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/adapter-vercel': ^1.0.0-next.31
   '@sveltejs/kit': next
+  '@tailwindcss/forms': ^0.3.4
   autoprefixer: ^10.3.7
   axios: ^0.24.0
+  classnames: ^2.3.1
   cssnano: ^5.0.8
   dotenv: ^10.0.0
   eslint: ^7.32.0
@@ -25,9 +27,11 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
-  '@sveltejs/kit': 1.0.0-next.192_sass@1.43.4+svelte@3.44.0
+  '@sveltejs/kit': 1.0.0-next.193_sass@1.43.4+svelte@3.44.0
+  '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.19
   autoprefixer: 10.4.0_postcss@8.3.11
   axios: 0.24.0
+  classnames: 2.3.1
   cssnano: 5.0.8_postcss@8.3.11
   dotenv: 10.0.0
   eslint: 7.32.0
@@ -177,8 +181,8 @@ packages:
       esbuild: 0.13.12
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.192_sass@1.43.4+svelte@3.44.0:
-    resolution: {integrity: sha512-8LyPeEwxzMFMMr05I27j77qgvBdw92eVCH+W8+nW8kA7dkfA1e38GZXEb3qshd0Jez2Cng8MAzVMoETzGaQcng==}
+  /@sveltejs/kit/1.0.0-next.193_sass@1.43.4+svelte@3.44.0:
+    resolution: {integrity: sha512-JRe7ZTZONNL2t+uFUkrT6HDWajD/Dp0lDMiB4FODZAtQLx94PKit0I699/dHrQR0qpzE3gYipqtxInTWasFpBg==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -218,6 +222,15 @@ packages:
       vite: 2.6.13_sass@1.43.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@tailwindcss/forms/0.3.4_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      mini-svg-data-uri: 1.4.3
+      tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
     dev: true
 
   /@trysound/sax/0.2.0:
@@ -548,6 +561,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /classnames/2.3.1:
+    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
     dev: true
 
   /color-convert/1.9.3:
@@ -1697,6 +1714,11 @@ packages:
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /mini-svg-data-uri/1.4.3:
+    resolution: {integrity: sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==}
+    hasBin: true
     dev: true
 
   /minimatch/3.0.4:
